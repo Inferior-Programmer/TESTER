@@ -43,7 +43,7 @@ def upload_to_git():
     os.system('git push -u origin master')
     os.system("\r\n")
     global fname
-    fname = norm_name + file_list[-1]
+    fname = norm_name + str(file_list[-1])
     file_list.append(file_list[-1] + 1)
     
     
