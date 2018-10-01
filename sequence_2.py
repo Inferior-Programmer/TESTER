@@ -4,7 +4,11 @@ import os
 import random
 import time
 import threading
-fname = "upload_2.txt"
+
+
+fname = "upload_.txt"
+
+file_list = [1]
 
 time_to_upload = time.clock()
 
@@ -29,13 +33,18 @@ def create_file():
 
            
     f.close()
+    print(fname)
     upload_to_git()
 
 def upload_to_git():
+    norm_name = "upload_.txt"
     os.system('git add .')
     os.system('git commit -m "repeat" ')
     os.system('git push -u origin master')
     os.system("\r\n")
+    global fname
+    fname = norm_name + file_list[-1]
+    file_list.append(file_list[-1] + 1)
     
     
 
