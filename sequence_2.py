@@ -14,7 +14,7 @@ def create_file():
     ref_time = time.clock()
     while l1 !=  5:
         curtime = time.clock()
-        if ref_time+0.32 < curtime:
+        if ref_time+3 < curtime:
             ref_time +=curtime
             rand_int1 = random.randint(0,20)
             rand_int2 = random.randint(20,40)
@@ -23,8 +23,7 @@ def create_file():
             f.write(new_string)
             l1 +=1
             print('done {}'.format (l1) )
-        else:
-            print(curtime)
+
            
     f.close()
     upload_to_git()
