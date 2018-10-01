@@ -12,7 +12,7 @@ def create_file():
     l1 = 0
     f = open(fname,"w+")
     ref_time = time.clock()
-    while l1 <  5:
+    while l1 !=  5:
         curtime = time.clock()
         if ref_time+0.32 < curtime:
             ref_time +=curtime
@@ -38,6 +38,6 @@ def upload_to_git():
     
 
 while True:
-    if time_to_upload+30  > time_to_upload:
+    if time_to_upload+60  > time_to_upload:
         create_file()
     
