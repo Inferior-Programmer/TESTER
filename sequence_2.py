@@ -6,7 +6,7 @@ import time
 import threading
 
 
-fname = "upload_"
+fname = "upload_.txt"
 
 file_list = [1]
 
