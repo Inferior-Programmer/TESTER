@@ -6,7 +6,7 @@ import time
 import threading
 
 
-fname = "upload_.txt"
+fname = "upload_"
 
 file_list = [1]
 
@@ -37,13 +37,13 @@ def create_file():
     upload_to_git()
 
 def upload_to_git():
-    norm_name = "upload_.txt"
+    norm_name = "upload_"
     os.system('git add .')
     os.system('git commit -m "repeat" ')
     os.system('git push -u origin master')
     os.system("\r\n")
     global fname
-    fname = norm_name + str(file_list[-1])
+    fname = norm_name + str(file_list[-1]) +'.txt'
     file_list.append(file_list[-1] + 1)
     
     
