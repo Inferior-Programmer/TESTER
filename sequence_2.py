@@ -14,8 +14,8 @@ def create_file():
     ref_time = 0
     while l1 !=  5:
         curtime = time.clock()
-        if ref_time+3 < curtime:
-            ref_time +=curtime
+        if ref_time+10 < curtime:
+            ref_time =curtime
             curtime = time.clock()
             rand_int1 = random.randint(0,20)
             rand_int2 = random.randint(20,40)
