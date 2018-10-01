@@ -36,9 +36,8 @@ def upload_to_git():
     os.system("\r\n")
     
     
+create_file()
 
-while True:
-    if time_to_upload+40  > time_to_upload:
-        create_file()
-        time_to_upload = time.clock()
+        
+        
     
