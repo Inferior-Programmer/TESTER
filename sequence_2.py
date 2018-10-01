@@ -9,7 +9,6 @@ fname = "upload_2.txt"
 time_to_upload = time.clock()
 
 def create_file():
-    threading.Timer(40.0, create_file).start()
     l1 = 0
     f = open(fname,"w+")
     ref_time = time.clock()
@@ -37,7 +36,7 @@ def upload_to_git():
     os.system("\r\n")
     
     
-create_file()
+
 
         
         
