@@ -8,7 +8,7 @@ import threading
 
 fname = "upload_.txt"
 
-file_list = [1]
+file_list = [4]
 
 time_to_upload = time.clock()
 
